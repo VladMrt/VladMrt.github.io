@@ -6,19 +6,19 @@ const port = 8080
 app.use('/static', express.static(path.join(__dirname, 'static')));
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'templates', 'MainPage.html'));
+  res.sendFile(path.join(__dirname, 'docs', 'MainPage.html'));
 });
 
 app.get('/GeekWheel', (req, res) => {
-    res.sendFile(path.join(__dirname, 'templates', 'GeekWheel.html'));
+    res.sendFile(path.join(__dirname, 'docs', 'GeekWheel.html'));
 });
 
 app.get('/DiliMiniSlots', (req, res) => {
-    res.sendFile(path.join(__dirname, 'templates', 'DiliMiniSlots.html'));
+    res.sendFile(path.join(__dirname, 'docs', 'DiliMiniSlots.html'));
 });
 
 app.get('/JoculCalamarului', (req, res) => {
-  res.sendFile(path.join(__dirname, 'templates', 'JoculCalamarului.html'));
+  res.sendFile(path.join(__dirname, 'docs', 'JoculCalamarului.html'));
 });
 
 app.listen(port, () => {
