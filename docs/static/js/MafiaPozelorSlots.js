@@ -57,8 +57,8 @@ var Game = {
 
 		const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.platform);
 		if (isMobile) {
-			this.canvas.width = window.innerWidth / 1;
-			this.canvas.height = window.innerHeight / 1.5;
+			// this.canvas.width = window.innerWidth / 1;
+			// this.canvas.height = window.innerHeight / 1.5;
 			this.player.y = this.canvas.height - 120;
 			this.player.width = this.player.width * 2;
 			this.player.height = this.player.height * 2;
